@@ -9,6 +9,9 @@ Base = declarative_base()
 Session = sessionmaker(bind=engine)
 session = Session()
 
+#Caso eu quisesse criar as tabelas automaticamente precisaria de:
+#Base.metadata.create_all(engine)
+#após a criação da classe
 
 # Entidades
 class Filmes(Base):
